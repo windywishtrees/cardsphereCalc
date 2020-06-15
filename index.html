@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="lib/css/bootstrap.css" type="text/css" rel="stylesheet">
+<head>
+<title>CardSphere Value Calculator</title>
+</head>
+
+<body>
+	<form>
+		<div class="form-group">
+			<label for="offerPrice">Offer Price:</label>
+			<input type="number" step="0.01" id="offerPrice" name="offerPrice"><br>
+			<label for="offerPercent">Offer Percent:</label>
+			<input type="number" step="1" min="1" max="100" id="offerPercent" name="offerPercent"><br>
+			<label for="shippingPrice">Shipping Price:</label>
+			<input type="number" step="0.01" id="shippingPrice" name="shippingPrice"><br>
+			<label for="buylistPrice">Buylist Cash Price:</label>
+			<input type="number" step="0.01" id="buylistPrice" name="buylistPrice"><br>
+			<label for="buylistPercent">Buylist Trade-in Percent:</label>
+			<input type="number" step="1" id="buylistPercent" name="buylistPercent"><br>
+		</div>
+	</form>
+	<br>
+	<button id="submit" class="button" value="submit" onclick="getCardDataAndCalc()">Submit</button><br>
+	<br>
+	
+	<label>CS Transaction Rake:</label>
+	<p id="csRakeDisplay"></p>
+
+	<table class="table table-dark">
+		<thead class="thead-dark">
+		<tr>
+			<th scope="col">Offer Price</th>
+			<th scope="col">Offer Percent</th>
+			<th scope="col">Shipping Price</th>
+			<th scope="col">Buylist Price</th>
+			<th scope="col">Buylist %</th>
+		</tr>
+		<tr>
+			<td id="printOfferPrice">$0.00</td>
+			<td id="printOfferPercent">0%</td>
+			<td id="printShippingPrice">$0.00</td>
+			<td id="printBuylistPrice">$0.00</td>
+			<td id="printBuylistPercent">0%</td>
+		</tr>
+	</table>
+	<table class="table">
+		<thead class="thead-light">
+		<tr>
+			<th scope="col">CS Trade Value</th>
+			<th scope="col">CS Cash Value</th>
+			<th scope="col">Buylist Cash Value</th>
+			<th scope="col">Buylist Trade Value</th>
+		</tr>
+		<tr>
+			<td id="printCsTrade">$0.00</td>
+			<td id="printCsCash">$0</td>
+			<td id="printBuylistPrice2">$0.00</td>
+			<td id="printBuylistTrade">$0.00</td>
+		</tr>
+	</table>
+
+</body>
+<script src="lib/js/main.js" type="text/JavaScript"></script>
+</html>
