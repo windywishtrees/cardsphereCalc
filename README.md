@@ -11,6 +11,6 @@ Effectively: where do I get the most money out of my card? Your options will be:
 
 I don't really have any plans to update this anytime soon and it's not written to be super efficient (so feel free to take the code and make it better). This is setup to assume you're using a US Stamp at $0.55 each. You can input a custom value for postage if you prefer. 
 
-#How do I use it?
+# How do I use it?
 
 Download as a zip and open the HTML file in your preferred browser. You can even bookmark it so long as you don't change the directory. 
