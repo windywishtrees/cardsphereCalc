@@ -13,4 +13,4 @@ I don't really have any plans to update this anytime soon and it's not written t
 
 # How do I use it?
 
-Download as a zip and open the HTML file in your preferred browser. You can even bookmark it so long as you don't change the directory. 
+Download as a zip and open the index.html file in your preferred browser. You can even bookmark it so long as you don't change the directory. 
